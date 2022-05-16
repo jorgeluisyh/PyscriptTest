@@ -1,0 +1,21 @@
+<html lang='es'>
+  <head>
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    <py-env>
+- './requests-2.27.1-py2.py3-none-any.whl'
+</py-env>
+  </head>
+  <body>
+      <py-script>
+import requests
+print(sys.path)
+print("ss")
+
+path1 = "http://www.columbia.edu/~fdc/sample.html"
+path2 = "https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.to_excel.html"
+response = requests.get(path1)
+print(response)
+      </py-script>
+  </body>
+</html>
